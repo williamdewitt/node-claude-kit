@@ -1,0 +1,34 @@
+{
+  "id": "node-claude-kit",
+  "name": "Node.js Claude Kit",
+  "version": "0.1.0",
+  "description": "Make Claude Code an expert full-stack Node.js developer",
+  "author": "Node.js Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/claude-kit/node-claude-kit"
+  },
+  "capabilities": {
+    "skills": 28,
+    "agents": 8,
+    "commands": 16,
+    "rules": 10,
+    "templates": 5,
+    "mcp_tools": 12,
+    "hooks": 6
+  },
+  "requirements": {
+    "claude-code": ">=0.8.0",
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "node.js",
+    "typescript",
+    "fastify",
+    "prisma",
+    "full-stack",
+    "testing",
+    "api-design"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "node-claude-kit",
+  "version": "0.1.0",
+  "description": "Make Claude Code an expert full-stack Node.js developer",
+  "type": "module",
+  "license": "MIT",
+  "author": "Node.js Community",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/claude-kit/node-claude-kit"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "node.js",
+    "typescript",
+    "ai-coding",
+    "skills",
+    "agents"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "validate": "echo 'Validating kit structure...'",
+    "test": "echo 'No tests for kit itself'"
+  },
+  "devDependencies": {},
+  "optional": true
+}

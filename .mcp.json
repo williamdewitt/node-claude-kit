@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "node-ast-navigator": {
+      "command": "npx",
+      "args": ["@node-claude-kit/ast-mcp", "${workspaceFolder}"]
+    }
+  }
+}
