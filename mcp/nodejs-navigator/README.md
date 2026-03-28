@@ -1,6 +1,8 @@
-# Node.js Navigator MCP Server
+# Node.js Navigator MCP Server (Design Reference)
 
-TypeScript AST-powered tools for token-efficient codebase navigation.
+**Status**: Design document for future implementation
+
+TypeScript AST-powered tools for token-efficient codebase navigation. This document describes 12 MCP tools that provide 10x token efficiency compared to file-based navigation.
 
 ## Tools (12 total)
 
