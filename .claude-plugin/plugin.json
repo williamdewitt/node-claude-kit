@@ -1,16 +1,15 @@
 {
   "id": "node-claude-kit",
-  "name": "Node.js Claude Kit",
+  "name": "node-claude-kit",
   "version": "0.1.0",
   "description": "Make Claude Code an expert full-stack Node.js developer",
-  "author": "Node.js Community",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/claude-kit/node-claude-kit"
+  "author": {
+    "name": "Node.js Community"
   },
+  "license": "MIT",
+  "repository": "https://github.com/claude-kit/node-claude-kit",
   "capabilities": {
-    "skills": 28,
+    "skills": 40,
     "agents": 8,
     "commands": 16,
     "rules": 10,
