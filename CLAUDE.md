@@ -4,18 +4,17 @@ This document configures Claude Code for developing the node-claude-kit plugin i
 
 ## Project Overview
 
-node-claude-kit is a comprehensive expert layer for full-stack Node.js development with Claude Code. It provides 40 skills, 8 specialist agents, 16 slash commands, 10 rules, 5 project templates, 12 MCP tools, and 6 Git hooks.
+node-claude-kit is a comprehensive expert layer for full-stack Node.js development with Claude Code. It provides 40 skills, 8 specialist agents, 10 rules, 5 project templates, design documentation for 12 MCP tools, and 6 Git hooks.
 
 ### Architecture
 
 The kit is organized into:
-- **Skills**: Reusable reference files teaching Node.js best practices
-- **Agents**: Specialist routing that activates for specific queries
-- **Rules**: Always-loaded conventions enforced globally
-- **Commands**: Slash command workflows
-- **Templates**: Starter CLAUDE.md files for different project types
-- **MCP Server**: TypeScript AST tools for token-efficient codebase navigation
-- **Knowledge Base**: Living ADRs and reference documents
+- **Skills**: 40 reusable reference files teaching Node.js best practices
+- **Agents**: 8 specialist agents that activate for specific queries
+- **Rules**: 10 always-loaded conventions enforced globally
+- **Templates**: 5 starter CLAUDE.md files for different project types
+- **MCP Reference**: Design documentation for 12 token-efficient navigation tools
+- **Knowledge Base**: Living ADRs and architectural decision records
 
 ## Development Patterns
 
@@ -50,14 +49,20 @@ The kit is organized into:
 5. Define boundaries (what it won't do)
 6. Register in AGENTS.md
 
-### Adding a New Command
+### How Agents Are Invoked
 
-1. Create file: `commands/{command-name}.md`
-2. Short description
-3. Example usage
-4. Which agent/skills it invokes
-5. Typical workflow
-6. Register in AGENTS.md
+Rather than using slash commands, users invoke agents through natural language queries. The kit routes queries to the appropriate agent based on keywords:
+
+- "Set up" / "init" → **node-architect**
+- "Create endpoint" / "API" → **api-designer**
+- "Database" / "migration" → **db-specialist**
+- "Test" / "coverage" → **test-engineer**
+- "Security" / "auth" → **security-auditor**
+- "Performance" / "slow" → **performance-analyst**
+- "Review" / "health check" → **code-reviewer**
+- "Build failed" / "error" → **build-error-resolver**
+
+See AGENTS.md for complete activation triggers.
 
 ## Tech Stack & Conventions
 

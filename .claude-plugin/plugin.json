@@ -11,7 +11,7 @@
   "capabilities": {
     "skills": 40,
     "agents": 8,
-    "commands": 16,
+    "commands": 0,
     "rules": 10,
     "templates": 5,
     "mcp_tools": 12,

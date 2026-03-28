@@ -3,7 +3,7 @@
   <p align="center">
     <strong>Make Claude Code an expert full-stack Node.js developer.</strong>
     <br />
-    40 skills • 8 specialist agents • 16 slash commands • 10 rules • 5 project templates • 12 MCP tools • 6 hooks
+    40 skills • 8 specialist agents • 10 rules • 5 project templates • 12 MCP tools (design docs) • 6 hooks
     <br />
     Built for Node.js 20+ / TypeScript 5.3+. Architecture-aware. Token-efficient.
   </p>
@@ -13,7 +13,6 @@
   <a href="#installation">Installation</a> •
   <a href="#quick-start">Quick Start</a> •
   <a href="#10x-features">10x Features</a> •
-  <a href="#slash-commands">Commands</a> •
   <a href="#skills">Skills</a> •
   <a href="#agents">Agents</a> •
   <a href="#rules">Rules</a> •
@@ -68,26 +67,20 @@ Then inside a Claude Code session:
 
 This detects your existing project or scaffolds a new one, then generates a customized `CLAUDE.md`.
 
-## Slash Commands (16)
+## How It Works
 
-| Command | Purpose |
-|---------|---------|
-| `/node-init` | Project setup and CLAUDE.md generation |
-| `/plan` | Architecture-aware planning |
-| `/verify` | 8-phase verification pipeline |
-| `/tdd` | Test-driven development workflow |
-| `/scaffold` | Feature scaffolding (API, page, service) |
-| `/code-review` | AST-powered code review |
-| `/build-fix` | Autonomous error fixing loop |
-| `/checkpoint` | Save progress with git commit |
-| `/security-scan` | OWASP + dependencies audit |
-| `/migrate` | Safe database migration workflow |
-| `/health-check` | Codebase health assessment |
-| `/de-sloppify` | Systematic cleanup |
-| `/wrap-up` | Session ending ritual |
-| `/instinct-status` | Show learned patterns |
-| `/instinct-export` | Export patterns to file |
-| `/instinct-import` | Import patterns from file |
+**You don't use slash commands.** Instead, you ask Claude naturally and the kit's agents route your request:
+
+- **"Set up the project"** → `node-architect` scaffolds structure and CLAUDE.md
+- **"Create a REST endpoint"** → `api-designer` builds with OpenAPI metadata
+- **"Optimize this query"** → `db-specialist` improves performance and adds indexes
+- **"Write tests for this"** → `test-engineer` creates integration tests with real DB
+- **"Review this code"** → `code-reviewer` runs multi-dimensional review
+- **"Fix build errors"** → `build-error-resolver` diagnoses and fixes autonomously
+- **"Check security"** → `security-auditor` audits for OWASP + secrets
+- **"Is this slow?"** → `performance-analyst` identifies bottlenecks
+
+The routing is automatic based on keywords. See [AGENTS.md](AGENTS.md) for complete activation triggers.
 
 ## Rules (10)
 
@@ -135,7 +128,7 @@ This detects your existing project or scaffolds a new one, then generates a cust
 - **Testing** (4): vitest-patterns, integration-testing, database-testing, e2e-testing
 - **DevOps** (3): docker-nodejs, ci-cd, environment-config
 - **Cross-cutting** (3): dependency-injection, configuration-patterns, validation
-- **Workflow** (2): workflow-mastery, parallel-dev
+- **Workflow** (1): workflow-mastery
 
 ## AST MCP Server
 
